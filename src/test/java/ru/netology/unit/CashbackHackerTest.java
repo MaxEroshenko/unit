@@ -1,10 +1,10 @@
 package ru.netology.unit;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.*;
 
 public class CashbackHackerTest {
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void shouldReturn1000WhenAmountIsZer() {
         CashbackHacker service = new CashbackHacker();
         int amount = 0;
@@ -15,7 +15,7 @@ public class CashbackHackerTest {
         assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void shouldCalculateRemain() {
         CashbackHacker service = new CashbackHacker();
         int amount = 100;
@@ -27,7 +27,7 @@ public class CashbackHackerTest {
 
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void shouldCalculateRemainIfAmountIsLessBoundary() {
         CashbackHacker service = new CashbackHacker();
         int amount = 999;
@@ -38,7 +38,7 @@ public class CashbackHackerTest {
         assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void shouldCalculateRemainIfAmountIsBoundary() {
         CashbackHacker service = new CashbackHacker();
         int amount = 1000;
@@ -49,7 +49,7 @@ public class CashbackHackerTest {
         assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void shouldCalculateRemainIfAmountIsMoreBoundary() {
         CashbackHacker service = new CashbackHacker();
         int amount = 1001;
